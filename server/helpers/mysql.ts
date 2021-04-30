@@ -11,6 +11,9 @@ config.multipleStatements = true;
 config.database = config.path[0];
 config.host = config.hosts[0].name;
 config.charset = 'utf8mb4';
+var c = JSON.parse(JSON.stringify(config));
+c.password = "******";
+console.log("mysql config is ", c);
 bluebird.promisifyAll([Pool, Connection]);
 const db = mysql.createPool(config);
 
