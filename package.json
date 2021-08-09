@@ -1,6 +1,6 @@
 {
   "name": "snapshot-hub",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": "snapshot-labs/snapshot-hub",
   "license": "MIT",
   "scripts": {
