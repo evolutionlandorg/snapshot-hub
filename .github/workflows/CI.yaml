@@ -29,7 +29,7 @@ jobs:
 
       - name: Build and publish docker image
         run: |
-          IMAGE_NAME=evolutionland/evolutionlandorg/evo-chat
+          IMAGE_NAME=evolutionland/evolutionlandorg/snapshot-hub
           IMAGE_PREFIX=asia-northeast1-docker.pkg.dev
           IMAGE_PUSH_NAME_TAG=${IMAGE_PREFIX}/${IMAGE_NAME}:${GIT_TAG_NAME}
           IMAGE_PUSH_NAME_SHA=${IMAGE_PREFIX}/${IMAGE_NAME}:sha-${SHA}
